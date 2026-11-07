@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Subscribe &middot; RVA Bike Feed</title><style>
+body { font-family: Georgia, serif; max-width: 680px; margin: 0 auto; padding: 16px;
+       background: #faf8f4; color: #222; line-height: 1.55; }
+h1 { font-size: 1.7em; margin: .5em 0 0; }
+.updated { color: #777; font-size: .9em; margin-bottom: 1.5em; }
+.updated a { color: #555; }
+article { border-top: 1px solid #ddd; padding: 1.5em 0; }
+.meta { color: #888; font-size: .8em; text-transform: uppercase; letter-spacing: .06em; }
+h2 { font-size: 1.2em; margin: .3em 0; }
+img { max-width: 100%; height: auto; display: block; margin: .8em 0; border-radius: 4px; }
+.row { display: flex; align-items: center; gap: 10px; padding: 12px 0; border-top: 1px solid #ddd; }
+.row label { flex: 1; }
+button { font: inherit; font-size: .9em; padding: 6px 12px; border: 1px solid #999;
+         border-radius: 4px; background: #fff; cursor: pointer; }
+.big { font-size: 1em; padding: 10px 18px; margin-top: 1.2em; background: #2d5a3d; color: #fff; border: none; }
+.note { color: #666; font-size: .9em; }
+</style></head><body><h1>Subscribe</h1><div class="updated"><a href="index.html">Back to the feed</a></div><p>Pick the sources you want. Use <strong>Copy feed link</strong> to add one at a time, or tick several and download them all at once.</p><div class="row"><label><input type="checkbox" data-name="Everything (all sources in one feed)" data-url="https://rvabikefeed.github.io/feed.xml"> Everything (all sources in one feed)</label><button onclick="copyLink(this)" data-url="https://rvabikefeed.github.io/feed.xml">Copy feed link</button></div>
+<div class="row"><label><input type="checkbox" checked data-name="rvaMORE" data-url="https://rvabikefeed.github.io/feeds/rvamore.xml"> rvaMORE</label><button onclick="copyLink(this)" data-url="https://rvabikefeed.github.io/feeds/rvamore.xml">Copy feed link</button></div>
+<div class="row"><label><input type="checkbox" checked data-name="What&#x27;s Next, Richmond?" data-url="https://rvabikefeed.github.io/feeds/wnrva.xml"> What&#x27;s Next, Richmond?</label><button onclick="copyLink(this)" data-url="https://rvabikefeed.github.io/feeds/wnrva.xml">Copy feed link</button></div>
+<div class="row"><label><input type="checkbox" checked data-name="useful.bike" data-url="https://rvabikefeed.github.io/feeds/usefulbike.xml"> useful.bike</label><button onclick="copyLink(this)" data-url="https://rvabikefeed.github.io/feeds/usefulbike.xml">Copy feed link</button></div>
+<div class="row"><label><input type="checkbox" checked data-name="r/rva (bike posts)" data-url="https://rvabikefeed.github.io/feeds/r-rva.xml"> r/rva (bike posts)</label><button onclick="copyLink(this)" data-url="https://rvabikefeed.github.io/feeds/r-rva.xml">Copy feed link</button></div><button class="big" onclick="downloadList()">Add these to my feed reader</button><p class="note">This downloads a small file. In your feed reader (Inoreader, Feedly, NetNewsWire and others), choose Import and pick that file.</p><script>
+function copyLink(btn) {
+  var u = btn.getAttribute('data-url');
+  function done() { btn.textContent = 'Copied!'; setTimeout(function () { btn.textContent = 'Copy feed link'; }, 1500); }
+  if (navigator.clipboard) { navigator.clipboard.writeText(u).then(done, function () { prompt('Copy this link:', u); }); }
+  else { prompt('Copy this link:', u); }
+}
+function x(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+function downloadList() {
+  var boxes = document.querySelectorAll('input[type=checkbox]:checked');
+  if (!boxes.length) { alert('Tick at least one source first.'); return; }
+  var o = '<?xml version="1.0" encoding="UTF-8"?>\n<opml version="2.0"><head><title>RVA Bike Feed</title></head><body>\n<outline text="RVA Bike Feed" title="RVA Bike Feed">\n';
+  boxes.forEach(function (b) {
+    var n = x(b.getAttribute('data-name')), u = x(b.getAttribute('data-url'));
+    o += '<outline type="rss" text="' + n + '" title="' + n + '" xmlUrl="' + u + '"/>\n';
+  });
+  o += '</outline>\n</body></opml>\n';
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([o], { type: 'text/x-opml' }));
+  a.download = 'rva-bike-feeds.opml';
+  document.body.appendChild(a); a.click(); a.remove();
+}
+</script></body></html>
