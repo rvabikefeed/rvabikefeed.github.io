@@ -3,120 +3,13 @@
 <title>RVA Bike Feed: Virginia Capital Trail</title>
 <id>https://rvabikefeed.github.io/feeds/virginiacapitaltrail.xml</id>
 <link rel="self" href="https://rvabikefeed.github.io/feeds/virginiacapitaltrail.xml"/>
-<updated>2026-11-15T20:09:29Z</updated>
+<updated>2026-11-15T21:56:47Z</updated>
 <author><name>RVA Bike Feed</name></author>
-<entry><title>Virginia Capital Trail, November 15</title><id>https://rvabikefeed.github.io/post/eb39d50d45358290</id><updated>2026-11-15T12:10:33Z</updated><published>2026-11-15T12:10:33Z</published><author><name>Virginia Capital Trail</name></author><content type="html">&lt;p&gt;&lt;em&gt;From Virginia Capital Trail&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;error&quot;&gt;
-&lt;p&gt;
-                See
-                
-                    https://curl.haxx.se/libcurl/c/libcurl-errors.html
-                
-                for description of the curl error code.
-            &lt;/p&gt;
-&lt;h2&gt;Details&lt;/h2&gt;
-&lt;div style=&quot;margin-bottom: 15px;&quot;&gt;
-&lt;div class=&quot;error-type&quot;&gt;
-&lt;strong&gt;Type:&lt;/strong&gt; HttpException        &lt;/div&gt;
-&lt;div&gt;
-&lt;strong&gt;Code:&lt;/strong&gt; 0        &lt;/div&gt;
-&lt;div class=&quot;error-message&quot;&gt;
-&lt;strong&gt;Message:&lt;/strong&gt; cURL error Operation timed out after 3001 milliseconds with 67413 bytes received: 28 (https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://www.instagram.com/virginiacapitaltrail/embed/        &lt;/div&gt;
-&lt;div&gt;
-&lt;strong&gt;File:&lt;/strong&gt; lib/http.php        &lt;/div&gt;
-&lt;div&gt;
-&lt;strong&gt;Line:&lt;/strong&gt; 194        &lt;/div&gt;
-&lt;/div&gt;
-&lt;h2&gt;Trace&lt;/h2&gt;
-&lt;code&gt;
-            #0 index.php(73): RssBridge-&amp;gt;main()        &lt;/code&gt;
+<entry><title>Virginia Capital Trail, November 15</title><id>https://rvabikefeed.github.io/post/f33b008f9e678c89</id><updated>2026-11-15T20:42:58Z</updated><published>2026-11-15T20:42:58Z</published><author><name>Virginia Capital Trail</name></author><content type="html">&lt;p&gt;&lt;em&gt;From Virginia Capital Trail&lt;/em&gt;&lt;/p&gt;&lt;img alt=&quot;🍂 The best kind of reset....&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/c4dbfb4968ee9d97.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🍂 The best kind of reset....&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/fff2ab5ca25cae04.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🍂 The best kind of reset....&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/19187cf6543402e9.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🍂 The best kind of reset....&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/3c7a26b68a1092dc.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🍂 The best kind of reset....&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/7057658a9b642715.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🍂 The best kind of reset....&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/b1d74c26051c559c.jpg&quot;/&gt;&lt;br/&gt;&lt;br/&gt;🍂 The best kind of reset.&lt;br/&gt;
 &lt;br/&gt;
-&lt;code&gt;
-            #1 lib/RssBridge.php(39): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+Sunday snapshots. 📸&lt;br/&gt;
 &lt;br/&gt;
-&lt;code&gt;
-            #2 lib/RssBridge.php(37): BasicAuthMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #3 middlewares/BasicAuthMiddleware.php(13): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #4 lib/RssBridge.php(37): CacheMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #5 middlewares/CacheMiddleware.php(44): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #6 lib/RssBridge.php(37): ExceptionMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #7 middlewares/ExceptionMiddleware.php(17): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #8 lib/RssBridge.php(37): SecurityMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #9 middlewares/SecurityMiddleware.php(19): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #10 lib/RssBridge.php(37): MaintenanceMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #11 middlewares/MaintenanceMiddleware.php(10): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #12 lib/RssBridge.php(37): TokenAuthenticationMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #13 middlewares/TokenAuthenticationMiddleware.php(10): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #14 lib/RssBridge.php(34): DisplayAction-&amp;gt;__invoke()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #15 actions/DisplayAction.php(54): DisplayAction-&amp;gt;createResponse()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #16 actions/DisplayAction.php(89): InstagramBridge-&amp;gt;collectData()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #17 bridges/InstagramBridge.php(128): InstagramBridge-&amp;gt;getInstagramJSON()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #18 bridges/InstagramBridge.php(305): InstagramBridge-&amp;gt;getInstagramJSONFallback()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #19 bridges/InstagramBridge.php(337): InstagramBridge-&amp;gt;getContents()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #20 bridges/InstagramBridge.php(99): getContents()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #21 lib/contents.php(135): CurlHttpClient-&amp;gt;request()        &lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;
-            #22 lib/http.php(194)        &lt;/code&gt;
-&lt;br/&gt;
-&lt;br/&gt;
-&lt;h2&gt;Context&lt;/h2&gt;
-&lt;div&gt;
-&lt;strong&gt;Query:&lt;/strong&gt; action=display&amp;amp;bridge=InstagramBridge&amp;amp;context=Username&amp;amp;u=virginiacapitaltrail&amp;amp;media_type=all&amp;amp;format=Atom    &lt;/div&gt;
-&lt;div&gt;
-&lt;strong&gt;Version:&lt;/strong&gt; 2025-08-05    &lt;/div&gt;
-&lt;div&gt;
-&lt;strong&gt;OS:&lt;/strong&gt; Linux    &lt;/div&gt;
-&lt;div&gt;
-&lt;strong&gt;PHP:&lt;/strong&gt; 8.2.35    &lt;/div&gt;
-&lt;br/&gt;
-Go back
-&lt;/div&gt;
-
-&lt;button&gt;Find similar bugs&lt;/button&gt;
-
-
-&lt;button&gt;Create GitHub Issue&lt;/button&gt;
-
-&lt;p class=&quot;maintainer&quot;&gt;
-    No maintainer&lt;/p&gt;</content></entry>
+🏷️ #virginiacapitaltrail #captrailadventures #virginiaisfortrailovers #vct #fallinva</content></entry>
 <entry><title>Virginia Capital Trail, November 14</title><id>https://rvabikefeed.github.io/post/618cbfda14cad862</id><updated>2026-11-14T00:12:11Z</updated><published>2026-11-14T00:12:11Z</published><author><name>Virginia Capital Trail</name></author><content type="html">&lt;p&gt;&lt;em&gt;From Virginia Capital Trail&lt;/em&gt;&lt;/p&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/2c78398e42cc1a3f.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/7e5454acc2e8e0f8.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/f881eea93539bd80.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/0ea059ecd95ffd5d.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/e42371f69511f1ee.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/388d81157049175c.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/c2b1f1b3b3da3a34.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/716c8d11b2d70c0b.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/f67be61419b87784.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/5fecaeb06c53c7e9.jpg&quot;/&gt;&lt;br/&gt;&lt;br/&gt;🎉 Eleven years of the Virginia Capital Trail! We have so much to celebrate and even more to look forward to! 💙💚 &lt;br/&gt;
 &lt;br/&gt;
 We had a wonderful time with our Board of Directors, community partners, and fellow Trail supporters at our 2026 State of the Trail at Historic Westover on Sunday. It was a great opportunity to reflect on the Trail’s impact over the last 11 years, share how it’s inspiring trail development across Virginia, highlight the exciting progress of the Williamsburg extension, and talk about what’s coming up next! &lt;br/&gt;
