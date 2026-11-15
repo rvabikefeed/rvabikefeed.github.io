@@ -3,8 +3,120 @@
 <title>RVA Bike Feed: Bike Monday Bros</title>
 <id>https://rvabikefeed.github.io/feeds/bikemondaybros.xml</id>
 <link rel="self" href="https://rvabikefeed.github.io/feeds/bikemondaybros.xml"/>
-<updated>2026-11-15T00:09:39Z</updated>
+<updated>2026-11-15T04:10:40Z</updated>
 <author><name>RVA Bike Feed</name></author>
+<entry><title>Bike Monday Bros, November 15</title><id>https://rvabikefeed.github.io/post/7be89d91f66d2925</id><updated>2026-11-15T04:10:37Z</updated><published>2026-11-15T04:10:37Z</published><author><name>Bike Monday Bros</name></author><content type="html">&lt;p&gt;&lt;em&gt;From Bike Monday Bros&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;error&quot;&gt;
+&lt;p&gt;
+                See
+                
+                    https://curl.haxx.se/libcurl/c/libcurl-errors.html
+                
+                for description of the curl error code.
+            &lt;/p&gt;
+&lt;h2&gt;Details&lt;/h2&gt;
+&lt;div style=&quot;margin-bottom: 15px;&quot;&gt;
+&lt;div class=&quot;error-type&quot;&gt;
+&lt;strong&gt;Type:&lt;/strong&gt; HttpException        &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;Code:&lt;/strong&gt; 0        &lt;/div&gt;
+&lt;div class=&quot;error-message&quot;&gt;
+&lt;strong&gt;Message:&lt;/strong&gt; cURL error Operation timed out after 3001 milliseconds with 15215 bytes received: 28 (https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://www.instagram.com/bikemondaybros/embed/        &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;File:&lt;/strong&gt; lib/http.php        &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;Line:&lt;/strong&gt; 194        &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Trace&lt;/h2&gt;
+&lt;code&gt;
+            #0 index.php(73): RssBridge-&amp;gt;main()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #1 lib/RssBridge.php(39): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #2 lib/RssBridge.php(37): BasicAuthMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #3 middlewares/BasicAuthMiddleware.php(13): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #4 lib/RssBridge.php(37): CacheMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #5 middlewares/CacheMiddleware.php(44): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #6 lib/RssBridge.php(37): ExceptionMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #7 middlewares/ExceptionMiddleware.php(17): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #8 lib/RssBridge.php(37): SecurityMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #9 middlewares/SecurityMiddleware.php(19): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #10 lib/RssBridge.php(37): MaintenanceMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #11 middlewares/MaintenanceMiddleware.php(10): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #12 lib/RssBridge.php(37): TokenAuthenticationMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #13 middlewares/TokenAuthenticationMiddleware.php(10): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #14 lib/RssBridge.php(34): DisplayAction-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #15 actions/DisplayAction.php(54): DisplayAction-&amp;gt;createResponse()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #16 actions/DisplayAction.php(89): InstagramBridge-&amp;gt;collectData()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #17 bridges/InstagramBridge.php(128): InstagramBridge-&amp;gt;getInstagramJSON()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #18 bridges/InstagramBridge.php(305): InstagramBridge-&amp;gt;getInstagramJSONFallback()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #19 bridges/InstagramBridge.php(337): InstagramBridge-&amp;gt;getContents()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #20 bridges/InstagramBridge.php(99): getContents()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #21 lib/contents.php(135): CurlHttpClient-&amp;gt;request()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #22 lib/http.php(194)        &lt;/code&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2&gt;Context&lt;/h2&gt;
+&lt;div&gt;
+&lt;strong&gt;Query:&lt;/strong&gt; action=display&amp;amp;bridge=InstagramBridge&amp;amp;context=Username&amp;amp;u=bikemondaybros&amp;amp;media_type=all&amp;amp;format=Atom    &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;Version:&lt;/strong&gt; 2025-08-05    &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;OS:&lt;/strong&gt; Linux    &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;PHP:&lt;/strong&gt; 8.2.35    &lt;/div&gt;
+&lt;br/&gt;
+Go back
+&lt;/div&gt;
+
+&lt;button&gt;Find similar bugs&lt;/button&gt;
+
+
+&lt;button&gt;Create GitHub Issue&lt;/button&gt;
+
+&lt;p class=&quot;maintainer&quot;&gt;
+    No maintainer&lt;/p&gt;</content></entry>
 <entry><title>Bike Monday Bros, November 14</title><id>https://rvabikefeed.github.io/post/8920ba0a5f9ea55d</id><updated>2026-11-14T16:22:22Z</updated><published>2026-11-14T16:22:22Z</published><author><name>Bike Monday Bros</name></author><content type="html">&lt;p&gt;&lt;em&gt;From Bike Monday Bros&lt;/em&gt;&lt;/p&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/1b89ed797d43605b.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/41b829bd962ed29c.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/0a1d39ee515af6e1.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/d94ed0dfddcae093.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/3e151051fee66fa5.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/107a433b13253dea.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/8e62cdd94c431f45.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/8baa2a9c5c3e986c.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/bd12d149e34c3782.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/b0c619470e653902.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. ...&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/97945e259a92b9be.jpg&quot;/&gt;&lt;br/&gt;&lt;br/&gt;Thanx to @iconoclassless we acquired a bunch of junk bikes to do something with. &lt;br/&gt;
 &lt;br/&gt;
 The guys were able to build two bikes to donate, which left a bunch of other bikes for me to deal with. &lt;br/&gt;
