@@ -3,8 +3,120 @@
 <title>RVA Bike Feed: Franklin Military Academy</title>
 <id>https://rvabikefeed.github.io/feeds/franklinmilitaryacademy-3dcbb64a187e653b.xml</id>
 <link rel="self" href="https://rvabikefeed.github.io/feeds/franklinmilitaryacademy-3dcbb64a187e653b.xml"/>
-<updated>2026-11-15T08:09:33Z</updated>
+<updated>2026-11-15T12:10:43Z</updated>
 <author><name>RVA Bike Feed</name></author>
+<entry><title>Franklin Military Academy, November 15</title><id>https://rvabikefeed.github.io/post/ae52d2dbe2583cb3</id><updated>2026-11-15T12:10:25Z</updated><published>2026-11-15T12:10:25Z</published><author><name>Franklin Military Academy</name></author><content type="html">&lt;p&gt;&lt;em&gt;From Franklin Military Academy&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;error&quot;&gt;
+&lt;p&gt;
+                See
+                
+                    https://curl.haxx.se/libcurl/c/libcurl-errors.html
+                
+                for description of the curl error code.
+            &lt;/p&gt;
+&lt;h2&gt;Details&lt;/h2&gt;
+&lt;div style=&quot;margin-bottom: 15px;&quot;&gt;
+&lt;div class=&quot;error-type&quot;&gt;
+&lt;strong&gt;Type:&lt;/strong&gt; HttpException        &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;Code:&lt;/strong&gt; 0        &lt;/div&gt;
+&lt;div class=&quot;error-message&quot;&gt;
+&lt;strong&gt;Message:&lt;/strong&gt; cURL error Operation timed out after 3000 milliseconds with 23471 bytes received: 28 (https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://www.instagram.com/franklinmilitaryacademy/embed/        &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;File:&lt;/strong&gt; lib/http.php        &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;Line:&lt;/strong&gt; 194        &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Trace&lt;/h2&gt;
+&lt;code&gt;
+            #0 index.php(73): RssBridge-&amp;gt;main()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #1 lib/RssBridge.php(39): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #2 lib/RssBridge.php(37): BasicAuthMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #3 middlewares/BasicAuthMiddleware.php(13): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #4 lib/RssBridge.php(37): CacheMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #5 middlewares/CacheMiddleware.php(44): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #6 lib/RssBridge.php(37): ExceptionMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #7 middlewares/ExceptionMiddleware.php(17): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #8 lib/RssBridge.php(37): SecurityMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #9 middlewares/SecurityMiddleware.php(19): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #10 lib/RssBridge.php(37): MaintenanceMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #11 middlewares/MaintenanceMiddleware.php(10): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #12 lib/RssBridge.php(37): TokenAuthenticationMiddleware-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #13 middlewares/TokenAuthenticationMiddleware.php(10): RssBridge-&amp;gt;{closure}()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #14 lib/RssBridge.php(34): DisplayAction-&amp;gt;__invoke()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #15 actions/DisplayAction.php(54): DisplayAction-&amp;gt;createResponse()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #16 actions/DisplayAction.php(89): InstagramBridge-&amp;gt;collectData()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #17 bridges/InstagramBridge.php(128): InstagramBridge-&amp;gt;getInstagramJSON()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #18 bridges/InstagramBridge.php(305): InstagramBridge-&amp;gt;getInstagramJSONFallback()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #19 bridges/InstagramBridge.php(337): InstagramBridge-&amp;gt;getContents()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #20 bridges/InstagramBridge.php(99): getContents()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #21 lib/contents.php(135): CurlHttpClient-&amp;gt;request()        &lt;/code&gt;
+&lt;br/&gt;
+&lt;code&gt;
+            #22 lib/http.php(194)        &lt;/code&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2&gt;Context&lt;/h2&gt;
+&lt;div&gt;
+&lt;strong&gt;Query:&lt;/strong&gt; action=display&amp;amp;bridge=InstagramBridge&amp;amp;context=Username&amp;amp;u=franklinmilitaryacademy&amp;amp;media_type=all&amp;amp;format=Atom    &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;Version:&lt;/strong&gt; 2025-08-05    &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;OS:&lt;/strong&gt; Linux    &lt;/div&gt;
+&lt;div&gt;
+&lt;strong&gt;PHP:&lt;/strong&gt; 8.2.35    &lt;/div&gt;
+&lt;br/&gt;
+Go back
+&lt;/div&gt;
+
+&lt;button&gt;Find similar bugs&lt;/button&gt;
+
+
+&lt;button&gt;Create GitHub Issue&lt;/button&gt;
+
+&lt;p class=&quot;maintainer&quot;&gt;
+    No maintainer&lt;/p&gt;</content></entry>
 <entry><title>Franklin Military Academy, November 12</title><id>https://rvabikefeed.github.io/post/64c4d9084856a759</id><updated>2026-11-12T23:08:27Z</updated><published>2026-11-12T23:08:27Z</published><author><name>Franklin Military Academy</name></author><content type="html">&lt;p&gt;&lt;em&gt;From Franklin Military Academy&lt;/em&gt;&lt;/p&gt;&lt;img alt=&quot;Let’s get comfy tomorrow on our last themed day of Homecoming ☺️&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/e34348e8bd8dd398.jpg&quot;/&gt;&lt;br/&gt;&lt;br/&gt;Let’s get comfy tomorrow on our last themed day of Homecoming ☺️</content></entry>
 <entry><title>Franklin Military Academy, November 12</title><id>https://rvabikefeed.github.io/post/fd5e72d61230dc52</id><updated>2026-11-12T01:25:57Z</updated><published>2026-11-12T01:25:57Z</published><author><name>Franklin Military Academy</name></author><content type="html">&lt;p&gt;&lt;em&gt;From Franklin Military Academy&lt;/em&gt;&lt;/p&gt;&lt;img alt=&quot;Get those colors ready and we’ll see you tomorrow for Thursday’s theme of Homecoming week ☺️&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/89dc73dc5b0ac588.jpg&quot;/&gt;&lt;br/&gt;&lt;br/&gt;Get those colors ready and we’ll see you tomorrow for Thursday’s theme of Homecoming week ☺️</content></entry>
 <entry><title>Franklin Military Academy, November 11</title><id>https://rvabikefeed.github.io/post/00dd5c946318b691</id><updated>2026-11-11T21:14:14Z</updated><published>2026-11-11T21:14:14Z</published><author><name>Franklin Military Academy</name></author><content type="html">&lt;p&gt;&lt;em&gt;From Franklin Military Academy&lt;/em&gt;&lt;/p&gt;&lt;img alt=&quot;Congratulations to Franklin’s newest REB Award winners CPT Parker and MAJ Dubinsky 👏👏👏&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/50fac522ff9595f1.jpg&quot;/&gt;&lt;br/&gt;&lt;img alt=&quot;Congratulations to Franklin’s newest REB Award winners CPT Parker and MAJ Dubinsky 👏👏👏&quot; loading=&quot;lazy&quot; src=&quot;https://rvabikefeed.github.io/images/6a0b05c4bd87e38f.jpg&quot;/&gt;&lt;br/&gt;&lt;br/&gt;Congratulations to Franklin’s newest REB Award winners CPT Parker and MAJ Dubinsky 👏👏👏</content></entry>
